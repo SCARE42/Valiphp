@@ -1,0 +1,7 @@
+<?php
+    //Fichier de configuration de connexion à la base de données
+    //Copier ce fichier et le rennomer en db.config
+    $DB["name"] = "nom de la base";
+    $DB["username"] = "utilisateur";
+    $DB["password"] = "mot de passe";
+?>

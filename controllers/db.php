@@ -1,6 +1,7 @@
 <?php
 function getAllReservation(){
-    $connec = new PDO('mysql:dbname=reservation','root','0000');
+    require("db.config");
+    $connec = new PDO('mysql:dbname='$DB["name"],$DB["username"],$DB["password"]);
     $request = $connec->prepare('SELECT * FROM reservation');
     $request->execute();
     return $request->fetchAll();
